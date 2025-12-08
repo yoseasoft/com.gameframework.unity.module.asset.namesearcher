@@ -2,9 +2,9 @@
     "name": "Game.Module.Asset.NameSearcher.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:37684c07381711a438844033ad7e6728",
-        "GUID:841ce276f78a89e4c930e64580caf1c7",
-        "GUID:b3256d61a5aeb914896c2f42ac8c97d7"
+        "GooAsset",
+        "GooAsset.Editor",
+        "Game.Module.Asset.NameSearcher"
     ],
     "includePlatforms": [
         "Editor"

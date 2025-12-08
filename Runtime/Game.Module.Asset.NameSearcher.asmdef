@@ -2,8 +2,9 @@
     "name": "Game.Module.Asset.NameSearcher",
     "rootNamespace": "",
     "references": [
-        "GUID:37684c07381711a438844033ad7e6728",
-        "GUID:8c3d044deed6e7d47868f8bb52ce3735"
+        "GooAsset",
+        "Nova.Basic",
+        "Nova.UniTask"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
