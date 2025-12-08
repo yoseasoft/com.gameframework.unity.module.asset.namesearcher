@@ -1,0 +1,19 @@
+{
+    "name": "Game.Module.Asset.NameSearcher",
+    "rootNamespace": "",
+    "references": [
+        "GUID:37684c07381711a438844033ad7e6728",
+        "GUID:8c3d044deed6e7d47868f8bb52ce3735"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "GAME_COMPILE || UNITY_EDITOR"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
