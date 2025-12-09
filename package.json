@@ -19,6 +19,7 @@
   },
   "relatedPackages": {},
   "dependencies": {
+    "com.yoseasoft.gooasset": "1.0.0",
     "com.yoseasoft.novaframework": "1.0.0"
   }
 }
