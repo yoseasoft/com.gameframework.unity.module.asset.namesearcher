@@ -4,7 +4,8 @@
     "references": [
         "GooAsset",
         "Nova.Basic",
-        "Nova.UniTask"
+        "Nova.UniTask",
+        "Nova.LitJson"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

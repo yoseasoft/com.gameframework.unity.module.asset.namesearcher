@@ -4,6 +4,7 @@
     "references": [
         "GooAsset",
         "GooAsset.Editor",
+        "Nova.LitJson",
         "Game.Module.Asset.NameSearcher"
     ],
     "includePlatforms": [
