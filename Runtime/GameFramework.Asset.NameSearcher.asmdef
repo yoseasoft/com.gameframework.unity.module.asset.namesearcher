@@ -1,11 +1,11 @@
 {
-    "name": "Game.Module.Asset.NameSearcher",
+    "name": "GameFramework.Asset.NameSearcher",
     "rootNamespace": "",
     "references": [
         "GooAsset",
-        "Nova.Basic",
-        "Nova.UniTask",
-        "Nova.LitJson"
+        "NovaFramework.LitJson",
+        "NovaFramework.UniTask",
+        "NovaEngine.Basic"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
