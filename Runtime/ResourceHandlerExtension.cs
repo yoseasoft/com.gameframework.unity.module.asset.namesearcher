@@ -14,7 +14,7 @@ using Cysharp.Threading.Tasks;
 
 using UnityObject = UnityEngine.Object;
 
-namespace Game.Module.Asset.NameSearcher
+namespace GameFramework.Asset.NameSearcher
 {
     /// <summary>
     /// 资源管理句柄的扩展接口

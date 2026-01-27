@@ -16,7 +16,9 @@ using UnityEngine;
 using GooAsset;
 using GooAsset.Editor.Build;
 
-namespace Game.Module.Asset.NameSearcher.Editor
+using GameFramework.Asset.NameSearcher;
+
+namespace GameFramework.Editor.Asset.NameSearcher
 {
     [Serializable]
     internal class ManifestRoot
