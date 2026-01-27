@@ -1,6 +1,6 @@
 {
   "name": "com.gameframework.unity.module.asset.namesearcher",
-  "displayName": "GameFramework.Module.Asset.NameSearcher",
+  "displayName": "GameFramework.Asset.NameSearcher",
   "description": "The Asset.NameSearcher module package for GameFramework",
   "version": "1.0.0",
   "unity": "2018.3",
