@@ -44,20 +44,20 @@ namespace GameFramework.Asset.NameSearcher
         /// </summary>
         /// <param name="name">资源名字</param>
         /// <param name="completed">加载完成回调</param>
-        public static GooAsset.Asset LoadAssetAsyncByName<T>(this GameEngine.ResourceHandler self, string name, Action<UnityObject> completed) where T : UnityObject
+        public static GooAsset.Asset AsyncLoadAssetByName<T>(this GameEngine.ResourceHandler self, string name, Action<UnityObject> completed) where T : UnityObject
         {
             string url = ConvertAssetNameToUrl(name);
-            return self.LoadAssetAsync<T>(url, completed);
+            return self.AsyncLoadAsset<T>(url, completed);
         }
 
         /// <summary>
         /// 异步加载资源
         /// </summary>
         /// <param name="name">资源名字</param>
-        public static async UniTask<T> LoadAssetAsyncByName<T>(this GameEngine.ResourceHandler self, string name) where T : UnityObject
+        public static async UniTask<T> AsyncLoadAssetByName<T>(this GameEngine.ResourceHandler self, string name) where T : UnityObject
         {
             string url = ConvertAssetNameToUrl(name);
-            return await self.LoadAssetAsync<T>(url);
+            return await self.AsyncLoadAsset<T>(url);
         }
 
         /// <summary>
@@ -66,10 +66,10 @@ namespace GameFramework.Asset.NameSearcher
         /// <param name="name">资源名字</param>
         /// <param name="type">类型</param>
         /// <returns></returns>
-        public static async UniTask<UnityObject> LoadAssetAsyncByName(this GameEngine.ResourceHandler self, string name, Type type)
+        public static async UniTask<UnityObject> AsyncLoadAssetByName(this GameEngine.ResourceHandler self, string name, Type type)
         {
             string url = ConvertAssetNameToUrl(name);
-            return await self.LoadAssetAsync(url, type);
+            return await self.AsyncLoadAsset(url, type);
         }
 
         /// <summary>
@@ -89,10 +89,10 @@ namespace GameFramework.Asset.NameSearcher
         /// <param name="name">资源地址(名字或路径)</param>
         /// <param name="isAdditive">是否使用叠加方式加载</param>
         /// <param name="completed">加载完成回调</param>
-        public static GooAsset.Scene LoadSceneAsyncByName(this GameEngine.ResourceHandler self, string name, bool isAdditive, System.Action<GooAsset.Scene> completed)
+        public static GooAsset.Scene AsyncLoadSceneByName(this GameEngine.ResourceHandler self, string name, bool isAdditive, System.Action<GooAsset.Scene> completed)
         {
             string url = ConvertAssetNameToUrl(name);
-            return self.LoadSceneAsync(url, isAdditive, completed);
+            return self.AsyncLoadScene(url, isAdditive, completed);
         }
 
         /// <summary>
@@ -100,10 +100,10 @@ namespace GameFramework.Asset.NameSearcher
         /// </summary>
         /// <param name="url">资源地址(名字或路径)</param>
         /// <param name="isAdditive">是否使用叠加方式加载</param>
-        public static async UniTask<GooAsset.Scene> LoadSceneAsyncByName(this GameEngine.ResourceHandler self, string name, bool isAdditive = false)
+        public static async UniTask<GooAsset.Scene> AsyncLoadSceneByName(this GameEngine.ResourceHandler self, string name, bool isAdditive = false)
         {
             string url = ConvertAssetNameToUrl(name);
-            return await self.LoadSceneAsync(url, isAdditive);
+            return await self.AsyncLoadScene(url, isAdditive);
         }
 
         /// <summary>
@@ -120,20 +120,20 @@ namespace GameFramework.Asset.NameSearcher
         /// 异步加载原始流式文件(将所需的文件下载到persistentDataPath中, 完成后可根据文件保存路径(RawFile.savePath)读取文件)
         /// /// <param name="name">文件原打包路径('%ORIGINAL_RESOURCE_PATH%/......', 若为Assets外部文件则为:'Assets文件夹同级目录/...'或'Assets文件夹同级文件')</param>
         /// </summary>
-        public static GooAsset.RawFile LoadRawFileAsyncByName(this GameEngine.ResourceHandler self, string name, System.Action<GooAsset.RawFile> completed)
+        public static GooAsset.RawFile AsyncLoadRawFileByName(this GameEngine.ResourceHandler self, string name, System.Action<GooAsset.RawFile> completed)
         {
             string url = ConvertAssetNameToUrl(name);
-            return self.LoadRawFileAsync(url, completed);
+            return self.AsyncLoadRawFile(url, completed);
         }
 
         /// <summary>
         /// 异步加载原始流式文件(将所需的文件下载到persistentDataPath中, 完成后可根据文件保存路径(RawFile.savePath)读取文件)
         /// /// <param name="name">文件原打包路径('%ORIGINAL_RESOURCE_PATH%/......', 若为Assets外部文件则为:'Assets文件夹同级目录/...'或'Assets文件夹同级文件')</param>
         /// </summary>
-        public static async UniTask<GooAsset.RawFile> LoadRawFileAsyncByName(this GameEngine.ResourceHandler self, string name)
+        public static async UniTask<GooAsset.RawFile> AsyncLoadRawFileByName(this GameEngine.ResourceHandler self, string name)
         {
             string url = ConvertAssetNameToUrl(name);
-            return await self.LoadRawFileAsync(url);
+            return await self.AsyncLoadRawFile(url);
         }
 
         /// <summary>
