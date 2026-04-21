@@ -5,6 +5,7 @@
         "GooAsset",
         "NovaFramework.LitJson",
         "NovaFramework.UniTask",
+        "NovaFramework.AssetLoader",
         "NovaEngine.Basic"
     ],
     "includePlatforms": [],
